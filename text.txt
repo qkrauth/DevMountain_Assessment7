@@ -1,0 +1,8 @@
+results
+extra large array --> insert: 738 ms, append: 4.2 ms
+large array --> insert: 9.4 ms, append: 509 micro seconds
+medium array --> insert: 173 micro seconds, append: 136 micro seconds
+small array --> insert: 52 micro seconds, append: 127 micro seconds
+tiny array --> insert: 40 micro seconds, append: 95 micro seconds
+
+A general pattern for both functions is that the smaller the array, the less time each function takes. I think that the append function scales better than the insert function because the time values were much closer in relation to one another. The append function had more of a steadly decreasing slope. The insert function had by far the longest amount of time recorded, taken from the large array (738 ms) and it had the smallest amount of time recorded from the tiny array 40 micro seconds. the trend of the insert function was more of an exponential decreasing slope.
